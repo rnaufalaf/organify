@@ -21,13 +21,13 @@ module.exports = gql`
   }
 
   type Buyer {
-    id: ID!
+    buyerId: ID!
     username: String!
     avatar: String
     createdAt: String
   }
   type Seller {
-    id: ID!
+    sellerId: ID!
     sellerName: String!
     sellerDesc: String!
     sellerAvatar: String

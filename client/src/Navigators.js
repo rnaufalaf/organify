@@ -9,6 +9,7 @@ import InitialScreen from "./screens/InitialScreen";
 import SplashScreen from "./screens/SplashScreen";
 import LoginScreen from "./screens/LoginScreen";
 import HomeScreen from "./screens/HomeScreen";
+import SignupScreen from "./screens/SignupScreen";
 
 const HomeStack = createStackNavigator({
   Home: {
@@ -125,6 +126,12 @@ const AuthStack = createStackNavigator(
     },
     Login: {
       screen: LoginScreen,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
+    Signup: {
+      screen: SignupScreen,
       navigationOptions: {
         headerShown: false,
       },
